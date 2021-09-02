@@ -12,7 +12,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='malleus',
-    version=ddfirmware.__version__,
+    version=malleus_main.__version__,
     packages=find_packages(),
     python_requires='>=3.0',
     author='Travis Pawlikowski',
@@ -32,6 +32,6 @@ setup(
         'Operating System :: OS Independent'
     ],
     entry_points = {'console_scripts': [
-        'malleus=malleus.cli:main'],
+        'malleus=malleus_main.cli:main'],
         },
 )
